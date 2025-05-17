@@ -1,0 +1,59 @@
+body {
+    background: #efce31;
+    color: #173da2;
+    font-family: inter, sans-serif;
+    border: 1px solid #173da2;
+    border-radius: 8px;
+    height: 96vh;
+
+}
+
+/*body:after {
+    content: "";
+    border: 1px solid #173da2;
+    height: 1
+}*/
+
+.boundary {
+    margin-top: 20vh;
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    background: #e1e3e5;
+}
+.hero {
+    font-family: rubik, sans-serif;
+    font-size: 32px;
+}
+.about {
+    cursor: pointer;
+    text-align: right;z
+    margin-right: 20px;
+}
+
+.go {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    padding: 3px 5px;
+    margin-left: 600px;
+    border: 1px solid #173da2;
+    border-radius: 12px;
+}
+
+.name-container {
+    margin-left: -120px;
+    margin-bottom: -1px;
+}
+
+.scID-container {
+    margin-left: -85px;
+    margin-bottom: -1px;
+}
+
+.club-login {
+    cursor: pointer;
+}
