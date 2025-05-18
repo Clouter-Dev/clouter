@@ -4,45 +4,57 @@ body {
     font-family: inter, sans-serif;
     border: 1px solid #173da2;
     border-radius: 8px;
-    height: 96vh;
+    min-height: 97vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 
 }
 
-/*body:after {
-    content: "";
-    border: 1px solid #173da2;
-    height: 1
-}*/
-
-.boundary {
+.container {
     margin-top: 20vh;
     text-align: center;
 }
 
 input {
+    padding-left: 5px;
+    box-sizing: border-box;
+    text-indent: 6px;
     border: none;
     border-radius: 10px;
     background: #e1e3e5;
+    box-shadow: inset grey 0px 2px 3px;
+    outline: 0;
 }
 .hero {
+    margin-left: 30px;
     font-family: rubik, sans-serif;
     font-size: 32px;
 }
 .about {
     cursor: pointer;
-    text-align: right;z
-    margin-right: 20px;
+    position: absolute;
+    right: 23px;
+    top: 20px;
+
 }
 
 .go {
-    position: relative;
-    display: inline;
-    cursor: pointer;
-    padding: 3px 5px;
-    margin-left: 600px;
+    position: absolute;
+    margin-right: 20px;
+    right: 10px;
+    bottom: 30px;
     border: 1px solid #173da2;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 6px;
     border-radius: 12px;
+    cursor: pointer;
+    
 }
+
+
 
 .name-container {
     margin-left: -120px;
@@ -56,4 +68,32 @@ input {
 
 .club-login {
     cursor: pointer;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0ch;;
+    }
+    to {
+        width: 7ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+strong {
+    display: inline-block;
+    margin-bottom: -8px;
+    margin-left: -5px;
+    width: 7ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid black;
+    animation: typewriter 2s steps(7) 1s forwards, blink 800ms steps(13) 5s;
 }
