@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    margin-top: 20vh;
+    margin-top: 30vh;
     text-align: center;
 }
 
@@ -70,30 +70,46 @@ input {
     cursor: pointer;
 }
 
-@keyframes typewriter {
-    from {
-        width: 0ch;;
+@keyframes fontchange {
+    0% {
+        font-family: 'Major Mono Display', sans-serif;
+        font-size: 10px;
     }
-    to {
-        width: 7ch;
+    20% {
+        font-family: 'Kaushan Script', sans-serif;
+    }
+    40% {
+        font-family: 'Lobster', sans-serif;
+    }
+    60% {
+        font-family: 'Ranchers', sans-serif;
+    }
+    80% {
+        font-family: 'Bitter', sans-serif;
+    }
+    100% {
+        font-family: 'Rubik', sans-serif;
+        font-size: 30px;
     }
 }
 
-@keyframes blink {
-    from {
-        border-color: black;
-    }
-    to {
-        border-color: transparent;
-    }
-}
+
 strong {
     display: inline-block;
-    margin-bottom: -8px;
-    margin-left: -5px;
-    width: 7ch;
+    position: relative;
+    height: 1.5em;
+    min-width: 7ch;
+    vertical-align: baseline;
+    visibility: hidden;
+}
+
+strong::after {
+    content: "clouter";
+    visibility: visible;
+    position: absolute;
     white-space: nowrap;
+    left: 0;
+    animation: fontchange 0.6s;
+    max-width: 100%;
     overflow: hidden;
-    border-right: 1px solid black;
-    animation: typewriter 2s steps(7) 1s forwards, blink 800ms steps(13) 5s;
 }
