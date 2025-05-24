@@ -7,8 +7,12 @@ body {
     min-height: 97vh;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: stretch; /* Changed to stretch for full width content */
+    position: relative;
+    overflow: hidden; /* Prevent content from overflowing the border */
+    padding: 80px 0 20px; /* Remove horizontal padding */
 }
 
 .logo {
@@ -20,18 +24,25 @@ body {
 }
 
 .content {
-    margin-top: 25vh;
-    width: 100%;
+    width: 100%; /* Full width to reach both edges */
     height: 30vh;
     background-color: #efce31;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .profile-pics {
-    position: absolute;
     display: flex;
-    top: 70vh;
-    gap: 15vb;
-    justify-content: space-between;
+    gap: 5vw; /* Use vw for responsive gap, but smaller value */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on very small screens */
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    max-width: calc(100% - 40px); /* Keep within border bounds */
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .pfp {
@@ -39,4 +50,5 @@ body {
     border-radius: 100px;
     height: 110px;
     width: 110px;
+    flex-shrink: 0; /* Prevent shrinking */
 }
