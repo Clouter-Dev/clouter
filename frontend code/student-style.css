@@ -10,7 +10,10 @@ body {
     justify-content: center;
 
 }
-
+a {
+    color: #173da2;
+    text-decoration: none;
+}
 .container {
     margin-top: 30vh;
     text-align: center;

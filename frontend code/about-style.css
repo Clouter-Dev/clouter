@@ -1,6 +1,7 @@
 body {
+    font-family: inter;
     background: #000000;
-    color: #173da2;
+    color: black;
     font-family: inter, sans-serif;
     border: 1px solid #50c881;
     border-radius: 8px;
@@ -22,25 +23,38 @@ body {
     height: 64px;
     width: 64px;
 }
-
+strong{
+    color: #173da2;
+}
 .content {
-    width: 100%; /* Full width to reach both edges */
-    height: 30vh;
+    width: 100%;
+    min-height: 35vh;
     background-color: #efce31;
     margin-bottom: auto;
     margin-top: auto;
+    text-align: center;
 }
+
+ul {
+    margin-right: 2.8vw;
+    display: inline-block;
+}
+
+li {
+    margin-left: 2.8vw;
+    text-align: left;
+}
+
 
 .profile-pics {
     display: flex;
-    gap: 5vw; /* Use vw for responsive gap, but smaller value */
+    gap: 5vw; 
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; /* Allow wrapping on very small screens */
     margin-top: auto;
     margin-bottom: auto;
     width: 100%;
-    max-width: calc(100% - 40px); /* Keep within border bounds */
     padding: 0 20px;
     box-sizing: border-box;
 }
