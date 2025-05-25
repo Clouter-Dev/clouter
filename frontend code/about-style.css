@@ -29,16 +29,15 @@ body {
     background-color: #efce31;
     margin-bottom: auto;
     margin-top: auto;
-}
-
-.para {
     text-align: center;
 }
 
-ul{
-    text-align: center;
+ul {
     display: inline-block;
-    margin: 0;
+}
+
+li {
+    text-align: left;
 }
 
 
