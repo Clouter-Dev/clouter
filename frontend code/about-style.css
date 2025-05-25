@@ -1,7 +1,7 @@
 body {
     font-family: inter;
     background: #000000;
-    color: #173da2;
+    color: black;
     font-family: inter, sans-serif;
     border: 1px solid #50c881;
     border-radius: 8px;
@@ -23,7 +23,9 @@ body {
     height: 64px;
     width: 64px;
 }
-
+strong{
+    color: #173da2;
+}
 .content {
     width: 100%;
     min-height: 35vh;
@@ -34,10 +36,12 @@ body {
 }
 
 ul {
+    margin-right: 2.8vw;
     display: inline-block;
 }
 
 li {
+    margin-left: 2.8vw;
     text-align: left;
 }
 
