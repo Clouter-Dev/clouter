@@ -41,7 +41,7 @@ strong{
 
 .content {
     display: flex;
-    gap: 5vw;
+    gap: 1vw;
     margin-left: 10vw;
     margin-right: 10vw;
     align-items: center;
@@ -54,7 +54,7 @@ strong{
 }
 
 .carousal {
-    width: 80vw;
+    width: 24vw;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -64,6 +64,7 @@ strong{
 }
 .sides {
     background: linear-gradient(white, rgb(133, 228, 133));
-    height:  60vh;
+    height:  65vh;
+    width: 20vw;
 }
 
