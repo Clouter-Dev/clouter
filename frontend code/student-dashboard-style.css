@@ -1,9 +1,9 @@
 body {
     font-family: inter;
-    background: linear-gradient(to right, rgb(26, 26, 99), rgb(16, 5, 60));
+    background: linear-gradient( #051323, #000);
     color: #e1e3e5;
     font-family: inter, sans-serif;
-    border: 1px solid #051323;
+    border: 1px solid #173da2;
     border-radius: 8px;
     min-height: 97vh;
     box-sizing: border-box;
@@ -42,7 +42,7 @@ strong{
 .content {
     display: flex;
     gap: 1vw;
-    margin-left: 10vw;
+    margin-left: 12vw;
     margin-right: 10vw;
     align-items: center;
 }
@@ -59,11 +59,19 @@ strong{
     border-radius: 10px;
 }
 .center {
-    background: linear-gradient(white, rgb(222, 123, 139));
+    background: linear-gradient(white, #eb1d98);
     height:  80vh;
 }
+
+.left {
+    background: linear-gradient(white, #051323);
+}
+
+.right {
+    background: linear-gradient(white, rgba(128, 157, 108, 0.2833));
+}
+
 .sides {
-    background: linear-gradient(white, rgb(133, 228, 133));
     height:  65vh;
     width: 20vw;
 }
