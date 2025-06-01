@@ -1,6 +1,6 @@
 body {
     font-family: inter;
-    background: #809d6c;
+    background: linear-gradient(rgba(5, 19, 35, 1) 9%,rgba(235, 30, 153, 1) 40%, rgba(5, 19, 35, 1) 100%);
     color: #e1e3e5;
     font-family: inter, sans-serif;
     border: 1px solid #051323;
@@ -61,7 +61,7 @@ li {
 }
 
 .pfp {
-    border: 1px solid #051323;
+    border: 2px solid #efce31;
     border-radius: 100px;
     height: 110px;
     width: 110px;
