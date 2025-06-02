@@ -12,7 +12,6 @@ body {
     justify-content: center;
     align-items: stretch; /* Changed to stretch for full width content */
     position: relative;
-    overflow: hidden; /* Prevent content from overflowing the border */
 }
 
 .logo {
@@ -54,7 +53,7 @@ li {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; /* Allow wrapping on very small screens */
-    margin-top: auto;
+    margin-top: 5vh;
     margin-bottom: auto;
     width: 100%;
     padding: 0 20px;
