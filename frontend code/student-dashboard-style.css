@@ -37,6 +37,12 @@ strong{
     right: 23px;
     top: 1px;
     color: #efce31;
+    transition: all 0.3s ease;
+}
+
+.profile:hover {
+    background: #efce31;
+    color: black;
 }
 
 .content {
@@ -51,6 +57,12 @@ strong{
     height: 32px;
     width: 48px;
     border-radius: 20px;
+    border: 1px solid white;
+    font-size: x-large;
+    color: white;
+    background: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousal {
@@ -58,6 +70,7 @@ strong{
     border: 1px solid black;
     border-radius: 10px;
 }
+
 .center {
     background: linear-gradient(white, #eb1d98);
     height:  80vh;
