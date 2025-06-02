@@ -62,7 +62,14 @@ strong{
     color: white;
     background: none;
     align-items: center;
-    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+    color: #051323;
+    transform: scale(1.1);
 }
 
 .carousal {
