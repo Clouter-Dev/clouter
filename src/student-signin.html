@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel = "stylesheet" href = "student-style.css">
-  <title>Sign In - Clouter</title>
-  <link rel = "icon" type = "image/x-icon" href = "../images/clouter-withbg.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href = "https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Kaushan+Script&family=Lobster&family=Major+Mono+Display&family=Ranchers&family=Rubik&display=swap" rel = "stylesheet">
-</head>
-<body>
-  <div class="container">
-    <a href = "./about.html" class = "about"><p>about</p></a>
-    <p class = "hero">welcome to <strong>clouter</strong></p>
-    <p class = "name-container">name</p>
-    <input type = "text" class = "name">
-    <p class = "scID-container">scholar ID</p>
-    <input inputmode ="numeric" class = "scID" autocomplete = "off">
-    <p class = "club-login">login as a club</p>
-    <p class = "go">go</p>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Sign In - Clouter</title>
+    <link rel="icon" type="image/x-icon" href="../images/clouter-withbg.png" />
+  </head>
+  <body class="bg-gold font-inter text-egyptianblue min-h-screen m-0 p-2">
+    <div class="border border-egyptianblue min-h-screen w-full flex justify-center items-center">
+      <div class="text-center">
+        <a href="./about.html" class="cursor-pointer absolute right-3 top-5">
+          <p>about</p>
+        </a>
+        <p class="hero font-rubik text-3xl">welcome to <strong>clouter</strong></p>
+        <p class="name-container">name</p>
+        <input type="text" class="name inputField" />
+        <p class="scID-container">scholar ID</p>
+        <input inputmode="numeric" class="scID inputField" autocomplete="off" />
+        <p class="club-login">login as a club</p>
+        <p class="go absolute right-3 bottom-7 border border-egyptianblue rounded-xl py-1 px-1.5 cursor-pointer">go</p>
+      </div>
+    </div>
+  </body>
 </html>
