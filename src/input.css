@@ -16,5 +16,5 @@
 }
 
 .inputField {
-  @apply border border-egyptianblue outline-0;
+  @apply outline-0 border border-egyptianblue rounded-xl pl-1.5 indent-1.5;
 }
