@@ -22,5 +22,11 @@
   @apply h-28 w-28 border-2 border-gold rounded-full;
 }
 .logo {
-  @apply absolute top-6 left-4 h-16 w-16;
+  @apply absolute top-2 left-2 h-16 w-16;
+}
+.carousel {
+  @apply w-72 border border-none rounded-lg;
+}
+.btn {
+  @apply  border border-white text-xl rounded-full px-2 hover:bg-white hover:text-richblack hover:scale-110; 
 }
