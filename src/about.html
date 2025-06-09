@@ -2,41 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel = "stylesheet" href = "about-style.css">
+  <link rel = "stylesheet" href = "./output.css">
   <title>About - Clouter</title>
   <link rel = "icon" type = "image/x-icon" href = "../images/clouter-withbg.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href = "https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Kaushan+Script&family=Lobster&family=Major+Mono+Display&family=Ranchers&family=Rubik&display=swap" rel = "stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <img class = "logo" src = "../images/clouter-logo.png" alt = "clouter-logo">
-    <div class = "content">
+<body class = "font-inter text-grey h-screen m-0 p-4" style = "background: linear-gradient(rgba(5, 19, 35, 1) 9%,rgba(235, 30, 153, 1) 40%, rgba(5, 19, 35, 1) 100%);">
+    <div class = "border border-egyptianblue rounded-xl h-full w-full flex flex-col justify-center items-center">
+    <img class = "logo absolute top-4 left-4 h-16 w-16" src = "../images/clouter-logo.png" alt = "clouter-logo">
+    <!-- Contents Container -->
+    <div class = "bg-richblack text-center p-2 rounded-2xl">
       <p>
-            <strong>About Us</strong><br>
+            <strong class = "text-gold">About Us</strong><br>
             <b>Clouter</b> is a centralized platform built to streamline communication between college clubs and students.<br>Clubs can manage and share event schedules, announcements, and updates, while students can easily<br> track and stay informed about upcoming events.The platform enhances campus engagement<br> by making event discovery and reminders simple and efficient.<br>
-            <ul>
-              <strong>Features</strong>
-              <li>Centralized event calendar</li>
+            <ul class = "inline-block list-disc">
+              <strong class = "text-gold">Features</strong>
+              <li class = "text-left">Centralized event calendar</li>
 
 
-              <li>Club-wise event listings</li>
+              <li class = "text-left">Club-wise event listings</li>
 
 
-              <li>Real-time notifications</li>
+              <li class = "text-left">Real-time notifications</li>
 
 
-              <li>Mobile-responsive design</li>
+              <li class = "text-left">Mobile-responsive design</li>
           </ul>
       </p>
     </div>
-    <div class = "profile-pics">
-        <img class = "pfp sam" src = "../images/sam.jpg">
-        <img class = "pfp dd" src = "../images/dd.jpeg">
-        <img class = "pfp mjd" src = "../images/mjd.jpg">
-        <img class = "pfp bmd" src = "../images/bimandwip.jpg">
+
+    <!-- Profile Pics Cotainer -->
+    <div class = "flex gap-8 justify-center mt-16 flex-wrap">
+        <img class = "pfp" src = "../images/sam.jpg">
+        <img class = "pfp" src = "../images/dd.jpeg">
+        <img class = "pfp" src = "../images/mjd.jpg">
+        <img class = "pfp" src = "../images/bimandwip.jpg">
+    </div>
     </div>
 </body>
 
