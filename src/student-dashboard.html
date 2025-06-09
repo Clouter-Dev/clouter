@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel = "stylesheet" href = "student-dashboard-style.css">
-  <title>Student Dashboard - Clouter</title>
-  <link rel = "icon" type = "image/x-icon" href = "../images/clouter-withbg.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href = "https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Kaushan+Script&family=Lobster&family=Major+Mono+Display&family=Ranchers&family=Rubik&display=swap" rel = "stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Student Dashboard - Clouter</title>
+    <link rel="icon" type="image/x-icon" href="../images/clouter-withbg.png" />
+  </head>
 
-<body>
-    <img class = "logo" src = "../images/clouter-logo.png" alt = "clouter-logo">
-    <p class  = "profile">profile</p>
-    <div class = "content">
-      <button class = "btn previous">&leftarrow;</button>
-      <div class = "carousal sides left">
-
+  <body
+    class="h-screen font-inter text-grey p-4"
+    style="background: linear-gradient(#051323, #000)"
+  >
+    <div class = "border relative border-egyptianblue rounded-xl min-h-full w-full flex flex-col justify-center items-center px-2">
+      <img class="logo" src="../images/clouter-logo.png" alt="clouter-logo" />
+      <!-- Profile Button on Top Right -->
+      <p class="absolute right-3 top-3 border border-gold rounded-full text-gold cursor-pointer px-2 py-1 hover:bg-gold hover:text-black transition-all ease-linear duration-200">profile</p>
+      <!-- Main Carousel -->
+      <div class="flex gap-8 items-center justify-center box-border mx-4 max-w-full">
+        <button class="btn">&leftarrow;</button>
+        <div class="carousel h-[65vh]" style = "background: linear-gradient(white, #051323);"></div>
+        <div class="carousel h-[70vh]" style = "background: linear-gradient(white, #eb1d98);"></div>
+        <div class="carousel h-[65vh]" style = "background: linear-gradient(white, rgba(128, 157, 108, 0.2833));"></div>
+        <button class="btn">&rightarrow;</button>
       </div>
-      <div class = "carousal center">
-
-      </div>
-      <div class = "carousal sides right">
-
-      </div>
-      <button class = "btn next">&rightarrow;</button>
     </div>
-    
-</body>
-
+  </body>
 </html>
