@@ -21,3 +21,6 @@
 .pfp {
   @apply h-28 w-28 border-2 border-gold rounded-full;
 }
+.logo {
+  @apply absolute top-6 left-4 h-16 w-16;
+}
