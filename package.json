@@ -1,0 +1,25 @@
+{
+  "name": "clouter",
+  "version": "1.0.0",
+  "description": "Welcome to Clouter!",
+  "homepage": "https://github.com/Sam-2503/clouter#readme",
+  "bugs": {
+    "url": "https://github.com/Sam-2503/clouter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-2503/clouter.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.8",
+    "express": "^5.1.0",
+    "tailwindcss": "^4.1.8"
+  }
+}
