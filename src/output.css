@@ -272,9 +272,6 @@
   .max-w-full {
     max-width: 100%;
   }
-  .max-w-none {
-    max-width: none;
-  }
   .cursor-pointer {
     cursor: pointer;
   }
