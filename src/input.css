@@ -24,9 +24,15 @@
 .logo {
   @apply absolute top-2 left-2 h-16 w-16;
 }
-.carousel {
-  @apply w-72 border border-none rounded-lg;
+
+.center {
+  @apply aspect-[3/4] w-[60vw] max-h-full max-w-sm scale-105 rounded-xl;
 }
+
+.side {
+  @apply aspect-[3/5] w-[50vw] max-w-md scale-95 rounded-xl;
+}
+
 .btn {
   @apply border border-white text-xl rounded-full px-2 hover:bg-white hover:text-richblack hover:scale-110;
 }

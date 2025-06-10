@@ -13,12 +13,14 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-sm: 24rem;
+    --container-md: 28rem;
+    --container-6xl: 72rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-semibold: 600;
-    --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
@@ -221,9 +223,6 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
-  .mx-4 {
-    margin-inline: calc(var(--spacing) * 4);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -239,23 +238,20 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
-  .box-border {
-    box-sizing: border-box;
-  }
   .block {
     display: block;
   }
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .inline-block {
     display: inline-block;
   }
-  .h-\[65vh\] {
-    height: 65vh;
-  }
-  .h-\[70vh\] {
-    height: 70vh;
+  .h-\[90\%\] {
+    height: 90%;
   }
   .h-full {
     height: 100%;
@@ -269,8 +265,8 @@
   .w-full {
     width: 100%;
   }
-  .max-w-full {
-    max-width: 100%;
+  .max-w-6xl {
+    max-width: var(--container-6xl);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -398,6 +394,11 @@
       }
     }
   }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
 }
 .inputField {
   border-radius: var(--radius-xl);
@@ -430,13 +431,26 @@
   height: calc(var(--spacing) * 16);
   width: calc(var(--spacing) * 16);
 }
-.carousel {
-  width: calc(var(--spacing) * 72);
-  border-radius: var(--radius-lg);
-  border-style: var(--tw-border-style);
-  border-width: 1px;
-  --tw-border-style: none;
-  border-style: none;
+.center {
+  aspect-ratio: 3/4;
+  max-height: 100%;
+  width: 60vw;
+  max-width: var(--container-sm);
+  --tw-scale-x: 105%;
+  --tw-scale-y: 105%;
+  --tw-scale-z: 105%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+  border-radius: var(--radius-xl);
+}
+.side {
+  aspect-ratio: 3/5;
+  width: 50vw;
+  max-width: var(--container-md);
+  --tw-scale-x: 95%;
+  --tw-scale-y: 95%;
+  --tw-scale-z: 95%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+  border-radius: var(--radius-xl);
 }
 .btn {
   border-radius: calc(infinity * 1px);
