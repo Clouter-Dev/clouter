@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon Page</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: 
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.07), transparent 70%),
+        linear-gradient(135deg, 
+          #051323 17%, 
+          #661c66 50%, 
+          #051323 82%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .container {
+      width: 98%;
+      height: 96%;
+      border: 1px solid #051323; /* Updated as per request */
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .coming-soon {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 283px;
+      height: 283px;
+      display: block;
+      z-index: 2;
+    }
+
+    .text {
+      font-size: 48px;
+      font-weight: 700;
+      color: #000;
+      margin-left: -90px;  /* Pull closer to logo */
+      margin-top: -20px;   /* Align with logo center */
+      z-index: 1;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 98%;
+        height: 96%;
+      }
+
+      .coming-soon {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        width: 200px;
+        height: 200px;
+      }
+
+      .text {
+        font-size: 32px;
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="coming-soon">
+      <img src="Clouter Logo_draft 10.png" alt="Logo" class="logo" />
+      <div class="text">oming&nbsp;Soon</div>
+    </div>
+  </div>
+</body>
+</html>
