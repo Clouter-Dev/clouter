@@ -31,7 +31,7 @@ app.get('/student-dashboard', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'student-dashboard.html'));
 });
 
-// Add this new route for the coming soon page
+
 app.get('/comingsoon', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'comingsoon.html'));
 });
