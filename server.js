@@ -38,5 +38,5 @@ app.get('/', (req, res) => {
 });
 
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, 'src', 'error 404.html'));
+  res.status(404).sendFile(path.join(__dirname, 'src', '404.html'));
 });
