@@ -19,7 +19,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res) => {
+/*
+app.get('/student-signin', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'student-signin.html'));
 });
 
@@ -31,11 +32,11 @@ app.get('/student-dashboard', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'student-dashboard.html'));
 });
 
-
-app.get('/comingsoon', (req, res) => {
+*/
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'comingsoon.html'));
 });
 
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, 'src', '404.html'));
+  res.status(404).sendFile(path.join(__dirname, 'src', 'error 404.html'));
 });
