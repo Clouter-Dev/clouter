@@ -32,6 +32,9 @@ app.get('/student-dashboard', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'student-dashboard.html'));
 });
 
+app.get('/club-signin', (req, res) => {
+  res.sendFile(path.join(__dirname, 'src', 'club-signin.html'));
+});
 */
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'src', 'comingsoon.html'));
